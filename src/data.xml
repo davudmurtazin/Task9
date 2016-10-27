@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<test 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://www.davud-test.org/test-schema"
+             xsi:schemaLocation="http://www.davud-test.org/test-schema test-schema.xsd">
+    <dataSelection type = "questionType">
+        <question>
+            <questionID>1</questionID>
+            <questionSubjectID>1</questionSubjectID>
+            <content>2x2?</content>
+            <rightAnswer>4</rightAnswer>
+        </question>
+        <question>
+            <questionID>2</questionID>
+            <questionSubjectID>2</questionSubjectID>
+            <content>Capital of Belarus?</content>
+            <rightAnswer>Minsk</rightAnswer>
+        </question>
+        <question>
+            <questionID>1</questionID>
+            <questionSubjectID>1</questionSubjectID>
+            <content>2x2?</content>
+            <rightAnswer>4</rightAnswer>
+        </question>
+    </dataSelection>
+    <dataSelection type = "subjectType">
+        <subject>
+            <subjectID>1</subjectID>
+            <subjectName>math</subjectName>
+        </subject>
+        <subject>
+            <subjectID>2</subjectID>
+            <subjectName>geography</subjectName>
+        </subject>
+        <subject>
+            <subjectID>3</subjectID>
+            <subjectName>history</subjectName>
+        </subject>
+        <subject>
+            <subjectID>4</subjectID>
+            <subjectName>computer science</subjectName>
+        </subject>
+        <subject>
+            <subjectID>5</subjectID>
+            <subjectName>programing</subjectName>
+        </subject>
+    </dataSelection>
+</test>

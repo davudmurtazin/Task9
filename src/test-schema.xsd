@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema 	xmlns="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.davud-test.org/test-schema"
+           xmlns:tns="http://www.davud-test.org/test-schema"
+           elementFormDefault="qualified">
+
+    <element name="test">
+        <complexType>
+            <sequence>
+                <element name="dataSelection" type="tns:DataSelection" minOccurs="1" maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <complexType name="DataSelection">
+        <sequence>
+            <element name="question" type="tns:Question" minOccurs="0" maxOccurs="unbounded" />
+            <element name="subject" type="tns:Subject" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+        <attribute name="type" use="required">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="questionType"></enumeration>
+                    <enumeration value="subjectType"></enumeration>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+
+    <complexType name="Question">
+        <sequence>
+            <element name="questionID" type="int" />
+            <element name="questionSubjectID" type="int" />
+            <element name="content" type="string" />
+            <element name="rightAnswer" type="string" />
+        </sequence>
+    </complexType>
+
+    <complexType name="Subject">
+        <sequence>
+            <element name="subjectID" type="int" />
+            <element name="subjectName" type="string" />
+        </sequence>
+    </complexType>
+</schema>
